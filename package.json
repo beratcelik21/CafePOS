@@ -1,0 +1,13 @@
+{
+  "name": "cafe-pos",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start:backend": "cd backend && yarn start",
+    "start:frontend": "cd frontend && yarn start",
+    "start": "concurrently \"yarn start:backend\" \"yarn start:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
