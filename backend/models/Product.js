@@ -1,22 +1,18 @@
-const { DataTypes } = require("sequelize");
-const sequalize = require("../config/db");
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/db');
 
-const Product = sequalize.define(
-  "Product",
-  {
+const Product = sequelize.define('Product', {
     name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true,
     },
     price: {
-      type: DataTypes.FLOAT,
-      allowNull: false,
+        type: DataTypes.FLOAT,
+        allowNull: false,
     },
-  },
-  {
+}, {
     timestamps: true,
-  }
-);
+});
 
 module.exports = Product;

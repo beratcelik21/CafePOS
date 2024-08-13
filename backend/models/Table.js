@@ -1,7 +1,7 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/db");
 
-const Table = sequalize.define(
+const Table = sequelize.define(
   "Table",
   {
     name: {
